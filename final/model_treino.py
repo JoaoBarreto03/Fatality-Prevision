@@ -56,7 +56,6 @@ meta = RidgeCV(alphas=[0.1, 1.0, 10.0], cv=5)
 meta.fit(S_train, y_train)
 
 # 10. Salvar
-joblib.dump(meta, 'stacking_model.pkl')
 joblib.dump(scaler, 'scaler.pkl')
 
 from sklearn.ensemble import VotingRegressor
